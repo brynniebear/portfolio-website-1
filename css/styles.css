@@ -1,3 +1,9 @@
+:root {
+    --primary-color: rgb(70, 146, 70);
+    --secondary-color: rgb(129, 105, 89);
+    --accent-color: rgba(228, 199, 204, 0.644);
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
 }
@@ -9,5 +15,25 @@ h4,
 h5, 
 h6 {
     font-family: 'PT Sans', sans-serif;
-    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+}
+
+i {
+    color: white;
+    padding: 8px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    margin: 15px;
+}
+
+hr {
+    color: var(--primary-color);
+    padding: 2px;
+}
+
+.gallery {
+    background: var(--accent-color);
 }
