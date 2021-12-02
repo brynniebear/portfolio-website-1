@@ -1,12 +1,21 @@
 :root {
-    --primary-color: rgb(70, 146, 70);
-    --secondary-color: rgb(129, 105, 89);
-    --accent-color: rgba(228, 199, 204, 0.644);
+    --branding-color-1: #75C73D;
+    --branding-color-2: #43461F;
+    --branding-color-3: #F9F5F8;
 }
 
 body {
     font-family: 'Quicksand', sans-serif;
+    color: #43461F;
+    line-height: 1.5;
+    background: var(--branding-color-3);
 }
+
+header {
+    background: var(--accent-color);
+    padding-top: 100px;
+}
+
 
 h1, 
 h2, 
@@ -17,6 +26,56 @@ h6 {
     font-family: 'PT Sans', sans-serif;
 }
 
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.full-width {
+    background: white;
+}
+
+.hero {
+    padding: 30px 40px 20px 40px;
+    border-radius: 4px;
+}
+
+img.profile-photo {
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 2px solid var(--branding-color-1);
+}
+
+a.button {
+    border: 2px solid var(--branding-color-1);
+    border-radius: 4px;
+    color: var(--branding-color2);
+    display: block;
+    font-weight: bold;
+    margin: 30px auto 0;
+    max-width: 40%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: 200ms ease-in-out;
+}
+
+a.button:hover {
+    border: 2px solid var(--branding-color-3);
+    color: var(--branding-color-1);
+}
+
+
+.gallery {
+    background: var(--branding-color-3);
+}
+
 footer {
     text-align: center;
 }
@@ -24,16 +83,13 @@ footer {
 i {
     color: white;
     padding: 8px;
-    background: var(--secondary-color);
+    background: var(--branding-color-2);
     border-radius: 50%;
     margin: 15px;
 }
 
-hr {
-    color: var(--primary-color);
-    padding: 2px;
-}
-
-.gallery {
-    background: var(--accent-color);
+@media (max-width: 768px) {
+    h1 {
+        text-align: left;
+    }
 }
