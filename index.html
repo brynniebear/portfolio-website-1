@@ -17,9 +17,22 @@
 </head>
 <body>
     <header>
-        <nav>
-
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Brynn Williams</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="#">Who I Am</a>
+                  <a class="nav-link" href="#">What I've Created</a>
+                  <a class="nav-link" href="#">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <div class="full-width">
         <div class="container">
@@ -32,7 +45,7 @@
                         <h1>Brynn Williams</h1>
                         <h2>Front-End Developer based in Vancouver, Canada.</h2>
                         <p>
-                        I am a self-taught font-end developer, interested in creating responsive and educational websites and apps. I am passionate about creating websites and projects that are functional and friendly for everyone. I am keenly interested in bringing others' visions to life and collaborating with my clients to help them reach their goals.
+                        I am a self-taught front-end developer, interested in creating responsive and educational websites and apps. I am passionate about creating websites and projects that are functional and friendly for everyone. I am keenly interested in bringing others' visions to life and collaborating with my clients to help them reach their goals.
                         </p>
                         <a class="button" href="#">Contact Me</a>
                     </div>
@@ -45,21 +58,21 @@
             <h2>Featured Projects and Websites</h2>
                 <div class="row">
                     <div class="col-md-4">
-                        <img />
+                        <a href=""><img class="img-fluid gallery-image" src="images/react_weather_app.png" alt="Weather application built using React." /></a>
                     </div>
                     <div class="col-md-4">
-                        <img />
+                        <a href=""><img class="img-fluid gallery-image" src="images/react_dictionary_app.png" alt="Dictionary application built using React." /></a>
                     </div>
                     <div class="col-md-4">
-                        <img />
+                        <a href=""><img class="img-fluid gallery-image" src="images/fair_weather_friend_app.png" alt="Weather application built using JavaScript" /></a>
                     </div>
                 </div>
             </div>
         </div>
         <footer>
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-github"></i>
-            <i class="fas fa-envelope"></i>
+            <a href="https://www.linkedin.com/in/brynn-williams/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/brynniebear" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:williamsbrynn@gmail.com"><i class="fas fa-envelope"></i></a>
         </footer>
 </body>
 </html>
