@@ -22,7 +22,7 @@ a {
 }
 
 p {
-    font-size: 17px;
+    font-size: 18px;
 }
 
 header {
@@ -38,6 +38,11 @@ h1 {
     font-size: 4em;
     font-weight: bold;
     margin: 20px auto;
+}
+
+h1.page-title {
+    text-align: center;
+    margin: 100px auto 80px;
 }
 
 h2 {
@@ -80,7 +85,7 @@ a.button:hover {
 
 
 .gallery {
-    padding: 100px 0;
+    padding: 70px 0 100px;
 }
 
 img.gallery-image {
@@ -112,6 +117,26 @@ i {
     margin: 15px;
 }
 
+img.about-image {
+    border-radius: 4px;
+    max-width: 90%;
+}
+
+div.certificates {
+    background: var(--branding-color-3);
+    padding: 50px 0;
+    margin: 40px 0;
+}
+
+img.certificate {
+    background: white;
+    border: 2px solid var(--branding-color-1);
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+
+}
+
 @media (max-width: 768px) {
     h1 {
         text-align: left;
@@ -127,6 +152,10 @@ i {
 
     .hero {
         padding: 0;
+    }
+
+    div.certificates {
+        display: none;
     }
 }
 
