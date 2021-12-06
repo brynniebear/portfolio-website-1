@@ -64,25 +64,49 @@ img.profile-photo {
     border: 2px solid var(--branding-color-1);
 }
 
-a.button {
+a.primary-button {
     border: 2px solid var(--branding-color-1);
     border-radius: 4px;
     color: var(--branding-color2);
-    display: block;
     font-weight: bold;
     margin: 40px auto 0;
     max-width: 40%;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
     text-decoration: none;
     transition: 200ms ease-in-out;
 }
 
-a.button:hover {
+a.primary-button:hover {
     border: 2px solid var(--branding-color-3);
     color: var(--branding-color-1);
 }
 
+a.secondary-button {
+    border: 2px solid var(--branding-color-2);
+    border-radius: 4px;
+    color: var(--branding-color-1);
+    font-weight: bold;
+    margin: 40px auto 0;
+    max-width: 40%;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: 200ms ease-in-out;
+}
+
+a.secondary-button:hover {
+    border: 2px solid var(--branding-color-3);
+    color: var(--branding-color-2);
+}
+
+div.link-buttons.view-link {
+    text-align: right;
+}
+
+div.link-buttons.git-link {
+    text-align: left;
+}
 
 .gallery {
     padding: 70px 0 100px;
@@ -137,6 +161,19 @@ img.certificate {
 
 }
 
+a.contact-link {
+    color: var(--branding-color-1);
+}
+
+a.contact-link:hover {
+    color: var(--branding-color-2);
+}
+
+div.project-card {
+    margin: 50px 0;
+    padding: 20px;
+}
+
 @media (max-width: 768px) {
     h1 {
         text-align: left;
@@ -157,10 +194,17 @@ img.certificate {
     div.certificates {
         display: none;
     }
+
+    div.link-buttons.view-link,
+    div.link-buttons.git-link {
+        text-align: center;
+        margin: 20px;
+    }
 }
 
 @media (max-width: 992px) {
     img.profile-photo {
         margin-top: 4em;
     }
+
 }
