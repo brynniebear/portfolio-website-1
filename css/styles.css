@@ -223,7 +223,8 @@ img.project-image {
         padding: 0;
     }
 
-    img.project-image {
+    img.project-image,
+    img.contact-image {
         display: none;
     }
 }
