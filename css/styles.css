@@ -170,8 +170,9 @@ a.contact-link:hover {
 }
 
 div.project-card {
+    background: var(--branding-color-3);
     margin: 50px 0;
-    padding: 20px;
+    padding: 25px;
 }
 
 @media (max-width: 768px) {
