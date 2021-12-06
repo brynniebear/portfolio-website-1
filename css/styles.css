@@ -65,6 +65,7 @@ img.profile-photo {
 }
 
 a.primary-button {
+    background: white;
     border: 2px solid var(--branding-color-1);
     border-radius: 4px;
     color: var(--branding-color2);
@@ -83,6 +84,7 @@ a.primary-button:hover {
 }
 
 a.secondary-button {
+    background: white;
     border: 2px solid var(--branding-color-2);
     border-radius: 4px;
     color: var(--branding-color-1);
@@ -171,13 +173,23 @@ a.contact-link:hover {
 
 div.project-card {
     background: var(--branding-color-3);
+    border-radius: 4px;
     margin: 50px 0;
     padding: 25px;
+}
+
+img.project-image {
+    border: 2px solid var(--branding-color-2);
+    border-radius: 50%;
 }
 
 @media (max-width: 768px) {
     h1 {
         text-align: left;
+    }
+
+    h1.page-title {
+        margin-bottom: 20px;
     }
 
     .gallery {
@@ -200,6 +212,19 @@ div.project-card {
     div.link-buttons.git-link {
         text-align: center;
         margin: 20px;
+    }
+
+    div.project-card {
+        padding: 0;
+        text-align: center;
+    }
+
+    div.project-card div {
+        padding: 0;
+    }
+
+    img.project-image {
+        display: none;
     }
 }
 
