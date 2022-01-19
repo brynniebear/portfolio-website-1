@@ -1,6 +1,6 @@
 :root {
     --branding-color-1: #75C73D;
-    --branding-color-2: #43461F;
+    --branding-color-2: #43461f;
     --branding-color-3: #F9F5F8;
 }
 
@@ -12,7 +12,7 @@ body {
 
 
 h1, 
-h2, 
+h2,
 h3, 
 h4, 
 h5, 
@@ -45,7 +45,7 @@ h1.page-title {
     margin: 100px auto 80px;
 }
 
-h2 {
+h2, h3 {
     margin-bottom: 20px;
 }
 
@@ -135,12 +135,17 @@ footer {
     padding: 50px 0;
 }
 
-i {
+footer i {
     color: white;
     padding: 8px;
     background: var(--branding-color-2);
     border-radius: 50%;
     margin: 15px;
+    transition: 150ms ease-in-out;
+}
+footer i:hover {
+    color: var(--branding-color-1);
+    background: white;
 }
 
 img.about-image {
@@ -171,6 +176,25 @@ a.contact-link:hover {
     color: var(--branding-color-2);
 }
 
+div.work-nav-section a {
+    text-decoration: none;
+}
+
+h4.work-nav {
+    color: var(--branding-color-2);
+    font-weight: bold;
+    padding: 80px 50px;
+    border: 4px solid var(--branding-color-1);
+    border-radius: 50%;
+    transition: 200ms ease-in-out;
+}
+
+h4.work-nav:hover {
+    background-color: var(--branding-color-1);
+    color: white;
+    box-shadow: 5px 5px 10px 10px rgb(67, 70, 31, 0.2);
+}
+
 div.project-card {
     background: var(--branding-color-3);
     border-radius: 4px;
@@ -181,6 +205,28 @@ div.project-card {
 img.project-image {
     border: 2px solid var(--branding-color-2);
     border-radius: 50%;
+}
+
+div.website-offer {
+    background-color: var(--branding-color-3);
+    border-radius: 4px;
+}
+
+p.coming-soon {
+    font-size: 5em;
+    text-align: center;
+    color: var(--branding-color-1);
+    margin: 60px 0 80px;
+}
+
+#webiste-work,
+#front-end-dev-work,
+#other-work {
+    font-size: 40px;
+}
+
+p.note {
+    font-size: 10px;
 }
 
 @media (max-width: 768px) {
@@ -224,7 +270,8 @@ img.project-image {
     }
 
     img.project-image,
-    img.contact-image {
+    img.contact-image,
+    div.work-nav-section a {
         display: none;
     }
 }
