@@ -1,7 +1,7 @@
 :root {
-    --branding-color-1: #75C73D;
+    --branding-color-1: #75c73d;
     --branding-color-2: #43461f;
-    --branding-color-3: #F9F5F8;
+    --branding-color-3: rgb(249, 245, 248);
 }
 
 body {
