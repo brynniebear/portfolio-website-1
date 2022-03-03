@@ -212,14 +212,7 @@ div.website-offer {
     border-radius: 4px;
 }
 
-p.coming-soon {
-    font-size: 5em;
-    text-align: center;
-    color: var(--branding-color-1);
-    margin: 60px 0 80px;
-}
-
-#webiste-work,
+#website-work,
 #front-end-dev-work,
 #other-work {
     font-size: 40px;
@@ -227,6 +220,10 @@ p.coming-soon {
 
 p.note {
     font-size: 10px;
+}
+
+#oc-i-10386821-0 a {
+    color: var(--branding-color-1);
 }
 
 @media (max-width: 768px) {
